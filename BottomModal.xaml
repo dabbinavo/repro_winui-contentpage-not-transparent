@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="winui_contentpage_not_transparent.BottomModal"
+             Title="BottomModal"
+             BackgroundColor="Transparent">
+    <Grid Padding="5,0,5,-20">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="300" />
+        </Grid.RowDefinitions>
+        <Frame Padding="0,0,0,20"
+               Grid.Row="1"
+               CornerRadius="20"
+               BackgroundColor="Red">
+            <Grid>
+                <Button Text="Close"
+                        VerticalOptions="End"
+                        HorizontalOptions="Center"
+                        Clicked="CloseClicked">
+                </Button>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>
